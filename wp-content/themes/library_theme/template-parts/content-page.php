@@ -10,7 +10,8 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
+    <h2><?php the_title(); ?></h2>
+    <div><?php the_time('F jS, Y') ?><?php the_author() ?></div>
 	<?php init_post_thumbnail(); ?>
 
 	<div class="entry-content">
